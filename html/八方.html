@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>歧路旅人 - 八方旅人官方网站</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/5.15.4/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/新闻.css" />
+    <link rel="stylesheet" href="../css/characters.css" />
+    <link
+      rel="preload"
+      href="../设定img/2560x1440/2560x1440_Desktop_OT_Ophilia_Wallpaper01.jpg"
+      as="image"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"
+      async
+    ></script>
+    <script>
+      if (typeof Vue === "undefined") {
+        document.write(
+          '<script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js"><\/script>'
+        );
+      }
+    </script>
+    <link
+      href="https://fonts.loli.net/css2?family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+  </head>
+  <body>
+    <!-- 背景音乐 -->
+    <div class="music-player">
+      <audio id="bgMusic" loop>
+        <source
+          src="../music/Disc 1/01 Octopath Traveler –Main Theme–.flac"
+          type="audio/mpeg"
+        />
+        您的浏览器不支持音频元素。
+      </audio>
+      <button id="musicToggle" class="music-toggle">
+        <i class="fas fa-music"></i>
+      </button>
+    </div>
+
+    <!-- 背景 -->
+    <div class="main-background"></div>
+
+    <!-- 导航栏 -->
+    <nav>
+      <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#story">故事</a></li>
+        <li><a href="#characters">角色</a></li>
+        <li><a href="#features">特色</a></li>
+        <li class="search-container">
+          <input type="search" placeholder="搜索..." class="search-input" />
+          <button type="button" class="search-button">
+            <i class="fas fa-search"></i>搜索
+          </button>
+        </li>
+        <li>
+          <a href="登录.html" class="login-link" target="_blank"
+            ><i class="fas fa-user"></i> 登录</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 新闻区块 -->
+    <div class="news">
+      <h3>更新咨讯</h3>
+      <div class="news-main">
+        <div id="container">
+          <img id="image1" src="../img/OCTOPATH_TRAVELER_ALFYN_1920x1080.jpg" />
+          <img
+            id="image2"
+            src="../img/OCTOPATH_TRAVELER_ARTWORK_1_1920x1080.jpg"
+          />
+          <img
+            id="image3"
+            src="../img/OCTOPATH_TRAVELER_OPHILIA_1920x1080.jpg"
+          />
+          <img
+            id="image4"
+            src="../img/OCTOPATH_TRAVELER_TRESSA_1920x1080.jpg"
+          />
+          <img
+            id="image5"
+            src="../img/OCTOPATH_TRAVELER_HAANIT_1920x1080.jpg"
+          />
+        </div>
+        <div class="news-content">
+          <ul class="news-nav">
+            <li class="nav-item nav-item-active">最新</li>
+            <li class="nav-item">新闻</li>
+            <li class="nav-item">公告</li>
+            <li class="nav-item">活动</li>
+          </ul>
+          <ul class="news-list">
+            <li>
+              <a href="#" class="list-item">
+                <p class="item-title ellipsis">
+                  《歧路旅人2》全新DLC"交错的旅途"现已推出！
+                </p>
+                <p class="item-data">2024/02/21</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item">
+                <p class="item-title ellipsis">
+                  感谢各位玩家的支持，《歧路旅人2》全球销量突破100万份！
+                </p>
+                <p class="item-data">2024/02/15</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item">
+                <p class="item-title ellipsis">
+                  《歧路旅人2》1.0.2版本更新说明
+                </p>
+                <p class="item-data">2024/02/10</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item">
+                <p class="item-title ellipsis">《歧路旅人2现已正式发售！</p>
+                <p class="item-data">2024/02/01</p>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="news-more">查看所有资讯</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 故事介绍 -->
+    <section class="scroll-section" id="story">
+      <h2 class="section-title">故事背景</h2>
+      <div class="container">
+        <div class="card-column column-0">
+          <div class="card card-color-0">
+            <div class="border"></div>
+            <img src="../img/OCTOPATH_TRAVELER_ARTWORK_1_1920x1080.jpg" />
+            <h1>史诗般的冒险</h1>
+          </div>
+          <div class="card card-color-2">
+            <div class="border"></div>
+            <img src="../img/OCTOPATH_TRAVELER_ARTWORK_2_1920x1080.jpg" />
+            <h1>奥斯特拉大陆</h1>
+          </div>
+        </div>
+        <div class="card-column column-1">
+          <div class="card card-color-1">
+            <div class="border"></div>
+            <img src="../img/OCTOPATH_TRAVELER_ARTWORK_3_1920x1080.jpg" />
+            <h1>命运的交织</h1>
+          </div>
+          <div class="card card-color-3">
+            <div class="border"></div>
+            <img src="../img/OCTOPATH_TRAVELER_CYRUS_1920x1080.jpg" />
+            <h1>选择与分支</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="cover" class="cover"></div>
+
+      <div id="open-content" class="open-content">
+        <a href="#" id="close-content" class="close-content">
+          <span class="x-1"></span>
+          <span class="x-2"></span>
+        </a>
+        <img id="open-content-image" src="" />
+        <div class="text" id="open-content-text"></div>
+      </div>
+    </section>
+
+    <!-- 角色展示区域 -->
+    <section class="scroll-section" id="characters">
+      <h2 class="section-title">八位旅人</h2>
+      <div id="character-cards" class="character-showcase">
+        <div class="navigation-arrows">
+          <button class="nav-arrow prev-arrow" @click="scrollToPrev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="nav-arrow next-arrow" @click="scrollToNext">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="character-container">
+          <div
+            v-for="(character, index) in characters"
+            :key="character.id"
+            @click="handleCardClick(index)"
+          >
+            <card :data-image="character.image" :index="index">
+              <template v-slot:header>
+                <h1>{{ character.name }}</h1>
+              </template>
+              <template v-slot:content>
+                <p>{{ character.description }}</p>
+              </template>
+            </card>
+          </div>
+        </div>
+
+        <div class="character-indicators">
+          <span
+            v-for="(character, index) in characters"
+            :key="character.id"
+            :class="['indicator', { active: currentIndex === index }]"
+            @click="updateCurrentIndex(index)"
+          >
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特色介绍 -->
+    <section class="scroll-section" id="features">
+      <h2 class="section-title">游戏特色</h2>
+      <div class="features-container">
+        <div class="feature-card scroll-reveal">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>开放世界</h3>
+          <p>探广阔的奥斯特拉大陆，发现隐藏的秘密与宝藏。</p>
+        </div>
+
+        <div class="feature-card scroll-reveal">
+          <i class="fas fa-chess-knight"></i>
+          <h3>战系统</h3>
+          <p>独特的Break&Boost战斗机制，体验策略性的回合制战斗。</p>
+        </div>
+
+        <div class="feature-card scroll-reveal">
+          <i class="fas fa-users"></i>
+          <h3>角互动</h3>
+          <p>八位主角间的故事交织，体验丰富的剧情互动。</p>
+        </div>
+
+        <div class="feature-card scroll-reveal">
+          <i class="fas fa-paint-brush"></i>
+          <h3>HD-2D画面</h3>
+          <p>结合像素艺术与现代3D效果的独特视觉风格。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 更多内容区块 -->
+    <section class="scroll-section" id="more-content">
+      <h2 class="section-title">更多内容</h2>
+      <div class="video-container">
+        <div class="video-grid">
+          <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline>
+                <source src="../歧路旅人/movie_max.webm" type="video/webm" />
+                您的浏览器不支持 video 标签。
+              </video>
+            </div>
+            <h3>游戏预告片</h3>
+            <p>探索八位旅人的史诗冒险</p>
+          </div>
+
+          <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+              <video controls autoplay muted loop>
+                <source src="../歧路旅人/movie480_vp9.webm" type="video/webm" />
+                您的浏览器不支持 video 标签。
+              </video>
+            </div>
+            <h3>游戏玩法展示</h3>
+            <p>深入了解独特的战斗系统</p>
+          </div>
+
+          <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+              <video controls autoplay muted loop>
+                <source
+                  src="../歧路旅人\movie480_vp9 (1).webm"
+                  type="video/webm"
+                />
+                您的浏览器不支持 video 标签。
+              </video>
+            </div>
+            <h3>开发者日志</h3>
+            <p>了解游戏开发背后的故事</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>关于游戏</h4>
+          <ul>
+            <li><a href="#story">故事背景</a></li>
+            <li><a href="#characters">角色介绍</a></li>
+            <li><a href="#features">游戏特色</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>官方社交</h4>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>支持</h4>
+          <ul>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">技术支持</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Square Enix. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/characters.js"></script>
+    <script src="../js/news.js"></script>
+    <script src="../js/story.js"></script>
+  </body>
+</html>
